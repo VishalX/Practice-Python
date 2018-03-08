@@ -1,0 +1,7 @@
+# Ignore below files
+.vscode/*
+__pycache__
+*.pyc
+Python*/.vscode/*
+Python*/__pycache__
+Python*/*.pyc

@@ -1,0 +1,1 @@
+# len returns length of a string
