@@ -5,3 +5,4 @@ __pycache__
 Python*/.vscode/*
 Python*/__pycache__
 Python*/*.pyc
+.todo
