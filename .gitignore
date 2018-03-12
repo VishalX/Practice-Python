@@ -6,3 +6,4 @@ Python*/.vscode/*
 Python*/__pycache__
 Python*/*.pyc
 .todo
+bs4/*
