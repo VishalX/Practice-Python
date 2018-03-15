@@ -7,3 +7,5 @@ Python*/__pycache__
 Python*/*.pyc
 .todo
 bs4/*
+*.sqlite
+mbox.txt
