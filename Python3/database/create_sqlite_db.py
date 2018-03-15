@@ -6,7 +6,7 @@ Use: sqlite3 module
 # Import SQLite 
 import sqlite3
 
-dbname = "mbox-short.sqlite"
+dbname = "mbox.sqlite"
 # Open or create a sqlite database
 conn = sqlite3.connect(dbname)
 
@@ -22,7 +22,7 @@ cur.execute("CREATE TABLE EmailCounts ( Email TEXT, Count INTEGER )")
 # Open email data text file
 fname = input("{:<25}".format("[INPUT] Enter file name   :"))
 if len(fname) < 1:
-    fname = "..\\..\\mbox_short.txt"
+    fname = "..\\..\\mbox.txt"
 
 # Open file
 try:
