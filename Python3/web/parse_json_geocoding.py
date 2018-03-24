@@ -6,8 +6,8 @@ import json
 # key = ""
 
 # Google Geocoding JSON interface url
-# google_geocoidng_json = "https://maps.googleapis.com/maps/api/geocode/json?"
-dr_chuck_jeojson = "http://py4e-data.dr-chuck.net/geojson?"
+google_geocoidng_json = "https://maps.googleapis.com/maps/api/geocode/json?"
+# dr_chuck_jeojson = "http://py4e-data.dr-chuck.net/geojson?"
 # Ignore security certificates
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -18,8 +18,8 @@ while True:
     if len(address) < 1: break
     
     # Build complete URL with Address and KEY
-    # url = google_geocoidng_json + urllib.parse.urlencode({"address" : address}, {"key" : key})
-    url = dr_chuck_jeojson + urllib.parse.urlencode({"address" : address})#, {"key" : key})
+    url = google_geocoidng_json + urllib.parse.urlencode({"address" : address}) #, {"key" : key})
+    # url = dr_chuck_jeojson + urllib.parse.urlencode({"address" : address})#, {"key" : key})
     # URL data handle
     print("Retrieving : ", url)
     try:
